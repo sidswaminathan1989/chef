@@ -1,2 +1,8 @@
-<h1>Chefs#index</h1>
-<p>Find me in app/views/chefs/index.html.erb</p>
+<h1>Chef List</h1>
+<ul>
+  <% @chefs.each do |chef| %>
+    <li>
+      <%= chef.first_name %>
+    </li>
+  <% end %>
+</ul>
