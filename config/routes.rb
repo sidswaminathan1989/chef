@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   get '/chefs', to: "chefs#index"
   get '/chefs/:id', to: "chefs#show"
+  get '/chefs/:id/recipes', to: "chefs#recipes"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
