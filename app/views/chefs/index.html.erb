@@ -1,8 +1,9 @@
 <h1>Chef List</h1>
 <ul>
   <% @chefs.each do |chef| %>
-    <li>
-      <%= chef.first_name %>
-    </li>
+    <li><%= chef.first_name %> <%= chef.last_name %></li>
+    <ul>
+      <li>Created At: <%= chef.created_at %></li>
+    </ul>
   <% end %>
 </ul>
