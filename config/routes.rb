@@ -2,10 +2,11 @@ Rails.application.routes.draw do
   root "recipes#index"
   
   get '/recipes', to: "recipes#index"
-  get '/chefs', to: "chefs#index"
-
   get '/recipes/new', to: "recipes#new"
   get '/recipes/:id', to: "recipes#show"
+  
+  get '/chefs', to: "chefs#index"
+  get '/chefs/:id', to: "chefs#show"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
